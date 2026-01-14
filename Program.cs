@@ -33,7 +33,7 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetWeatherForecast")
+.WithName("GetWeatherForecast-CI/CD")
 .WithOpenApi();
 
 app.Run();
