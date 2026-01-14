@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# ASP.NET
+appsettings.Development.json
+
+# Azure publish profiles
+Properties/PublishProfiles/
+Properties/ServiceDependencies/
