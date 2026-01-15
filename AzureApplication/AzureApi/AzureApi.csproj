@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\AzureApplication.Core\AzureApplication.Core.csproj" />
+    <ProjectReference Include="..\AzureApplication.Infrastructure\AzureApplication.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

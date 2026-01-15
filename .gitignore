@@ -1,27 +1,18 @@
-# Visual Studio
-.vs/
-*.user
-*.suo
-
-# Build output
+# Build results
 bin/
 obj/
 
-# ASP.NET
-appsettings.Development.json
-
-# Azure publish profiles
-Properties/PublishProfiles/
-Properties/ServiceDependencies/
-
-
 # Visual Studio
 .vs/
-
-# User files
 *.user
 *.suo
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
+
+# App settings
+appsettings.Development.json
+
+# Logs
+*.log
