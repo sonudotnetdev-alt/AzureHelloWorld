@@ -14,6 +14,7 @@ appsettings.Development.json
 Properties/PublishProfiles/
 Properties/ServiceDependencies/
 
+
 # Visual Studio
 .vs/
 
