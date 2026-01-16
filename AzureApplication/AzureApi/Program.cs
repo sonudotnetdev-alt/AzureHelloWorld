@@ -1,4 +1,7 @@
-﻿using AzureApplication.Infrastructure;
+﻿using AzureApplication.Data;
+using AzureApplication.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,10 +11,14 @@ builder.Services.AddControllers();
 // Swagger (optional but recommended)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")
+    ));
 
 // Infrastructure DI
-builder.Services.AddInfrastructure();
-
+//builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure(builder.Configuration);
 var app = builder.Build();
 
 // Middleware
